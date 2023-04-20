@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(116, 12, 130);
+}
+
+.calculator{
+    width: 350px;
+    height: 600px;
+    margin: 0px auto;
+    background-image: linear-gradient(rgb(227, 22, 22),rgb(165, 46, 179));
+    position: relative;
+    top: 70px;
+    border-radius: 5px;
+box-shadow: 0px 10px 20px rgb(7, 173, 239),0 5px 10px rgb(21, 147, 215);
+padding: 16px;
+display: grid;
+grid-template-columns: repeat(4,80px);
+}
+input{
+    grid-column: span 4;
+    height: 150px;
+    width: 320px;
+    border: none;
+    text-align: end;
+   padding: 10px;
+   border-radius: 5px;
+    font-size: 40px;
+    color: white;
+ background-color: rgb(25, 24, 25);
+ box-shadow:inset 0px 5px 10px rgb(0, 0, 0);
+}
+button{
+    width: 70px;
+    height:70px;
+ margin-left: 5px;
+color: white;
+    border: none;
+    background-color: rgb(8, 205, 249);
+    box-shadow: 0 10px 10px blue,inset 0px 5px 10px;/* inset 0px 0px 5px  red*/
+    font-size: 20px;
+ font-weight: bold;
+}
+button:active /* we can use here hover */
+{       
+    color: red;
+    background-color: rgb(0, 217, 255);
+    box-shadow: inset -5px -10px 10px blue;
+}
